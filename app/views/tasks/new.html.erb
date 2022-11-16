@@ -1,0 +1,19 @@
+<%# <nav class="navbar bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+  </div>
+</nav> %>
+
+<%= form_with model: @task do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :details %>
+  <%= f.text_field :details %>
+  <%= f.submit %>
+<% end %>
+
+<%# <%= simple_form_for @task do |f| %>
+  <%= f.input :title %>
+  <%= f.input :title%>
+  <%= f.button :submit %>
+<% end %> %>
